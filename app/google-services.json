@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "173829925042",
+    "firebase_url": "https://tinder-4f6e7.firebaseio.com",
+    "project_id": "tinder-4f6e7",
+    "storage_bucket": "tinder-4f6e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173829925042:android:a5624cf5f8f7e6e2",
+        "android_client_info": {
+          "package_name": "testeadapt3.cursoandroid2.com.logar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173829925042-id3q45sn4cdiuq83ic1dnucbb2s45o47.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "testeadapt3.cursoandroid2.com.logar",
+            "certificate_hash": "82b5c326ea3c2dadd637ad5f505e9e9b88a92e39"
+          }
+        },
+        {
+          "client_id": "173829925042-mlllbp7rjedtdnd4d5f7l6v27doh9r65.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcDRgxTPb0A85EfVwkCpI5EVy3eBsrrrU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173829925042-mlllbp7rjedtdnd4d5f7l6v27doh9r65.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173829925042:android:6793f0f1c4539d56",
+        "android_client_info": {
+          "package_name": "testeadapt3.cursoandroid2.com.mytinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173829925042-028gv9dee359m7di9pkk38n9dej50o2p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "testeadapt3.cursoandroid2.com.mytinder",
+            "certificate_hash": "82b5c326ea3c2dadd637ad5f505e9e9b88a92e39"
+          }
+        },
+        {
+          "client_id": "173829925042-mlllbp7rjedtdnd4d5f7l6v27doh9r65.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcDRgxTPb0A85EfVwkCpI5EVy3eBsrrrU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173829925042-mlllbp7rjedtdnd4d5f7l6v27doh9r65.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

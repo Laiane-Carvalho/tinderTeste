@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/meuLayoutId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientebackgoundtelastinder"
+    tools:context="testeadapt3.cursoandroid2.com.mytinder.FinderActivity">
+
+
+    <ImageView
+        android:id="@+id/imagem1Cima"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/flor" />
+
+    <ImageView
+        android:id="@+id/imagem2Baixo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/flor1"/>
+
+    <TextView
+        android:id="@+id/textViewNomes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:text="teste"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/corNomes"/>
+
+    <ImageView
+        android:id="@+id/iconeID"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/imagem1Cima"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginRight="88dp"
+        android:src="@drawable/favourite_accept" />
+
+
+
+</RelativeLayout>

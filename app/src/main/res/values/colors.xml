@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+    <color name="corbacktindCorend">#d96b40</color>
+    <color name="corbackfacebookBotao">#4062d2</color>
+    <color name="corbacktindCorStart">#a65fb3</color>
+    <color name="corNomes">#370440</color>
+    <color name="corNomeFacebook">#ffffff</color>
+    <color name="corTextoPreto">#000000</color>
+    <color name="RED">#ea0a0a</color>
+    <color name="BLUE">#061cde</color>
+</resources>

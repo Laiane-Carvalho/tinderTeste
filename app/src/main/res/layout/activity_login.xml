@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientebackgoundtelastinder"
+    android:orientation="vertical"
+    tools:context="testeadapt3.cursoandroid2.com.mytinder.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/statusId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/corNomes"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/foguinho" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/campoEmailId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/backgroundbordasarredondadas"
+                    android:gravity="center"
+                    android:hint="Digite seu email"
+                    android:imeActionId="@+id/campoSenhaId"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:padding="5dp"
+                    android:textColorHint="@color/corNomes"
+                    android:textSize="18dp"
+                    tools:ignore="InvalidImeActionId" />
+
+                <EditText
+                    android:id="@+id/campoSenhaId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/backgroundbordasarredondadas"
+                    android:gravity="center"
+                    android:hint="Digite sua senha"
+                    android:imeOptions="actionGo"
+                    android:imeActionId="@+id/btnLogarId"
+                    android:padding="5dp"
+                    android:textColorHint="@color/corNomes"
+                    android:textSize="18dp"
+                    tools:ignore="InvalidImeActionId" />
+
+                <Button
+                    android:id="@+id/btnLogarId"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backgroundbordasarredondadas"
+                    android:onClick="logar"
+                    android:text="logar"
+                    android:textColor="@color/corNomes"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:onClick="botaoCadastrar"
+                    android:text="Cadastre-se"
+                    android:textColor="@color/corTextoPreto"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/login_buttonFacebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:background="@drawable/bordasarredondadasfacebook"
+                    android:drawableLeft="@drawable/facebook"
+                    android:foregroundGravity="center"
+                    android:text="Login with Facebook"
+                    android:textColor="@color/corNomeFacebook"
+                    android:onClick="logarFacebook"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
