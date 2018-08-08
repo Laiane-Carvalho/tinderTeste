@@ -52,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
         FirebaseUser user = auth.getCurrentUser();
         AccessToken accessToken = AccessToken.getCurrentAccessToken();
         if (accessToken != null && user != null) {
-            Intent intent = new Intent( LoginActivity.this, PaginaPrinActivity.class );
+            Intent intent = new Intent( LoginActivity.this, FinderActivity.class );
             startActivity( intent );
         }
     }

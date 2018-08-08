@@ -5,5 +5,9 @@
     <string name="fb_login_protocol_scheme">fb2077621139229767</string>
     <string name="title_activity_teste">testeActivity</string>
 
+    // menu toolbar
+    <string name="menu_out_aplication">Sair</string>
+    <string name="configura_o">Configuração</string>
+
 
 </resources>

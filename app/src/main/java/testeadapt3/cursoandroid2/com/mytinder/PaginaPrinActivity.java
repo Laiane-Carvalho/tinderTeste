@@ -38,7 +38,7 @@ public class PaginaPrinActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_principal );
-        toolbar = findViewById( R.id.tollbarPrincipalId );
+
         picturePerfilUser = findViewById( R.id.picturePerfil );
         nameperfilUser =findViewById( R.id.namePerfil );
                 setSupportActionBar( toolbar );
