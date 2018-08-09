@@ -54,7 +54,7 @@ public class CadastroActivity extends AppCompatActivity {
 
     public void onStart() {
         super.onStart();
-       // atualizar( user );
+        // atualizar( user );
     }
 
     private void createAccounte(String email, String senha) {
@@ -72,7 +72,7 @@ public class CadastroActivity extends AppCompatActivity {
                             irParaPrincipal();
                             FirebaseUser user = auth.getCurrentUser();
                             toastMessage( "sucesso ao criar" );
-                           // atualizar( user );
+                            // atualizar( user );
 
                         } else {
                             String errorException = "";
@@ -98,7 +98,7 @@ public class CadastroActivity extends AppCompatActivity {
     }
 
     private void irParaPrincipal() {
-        Intent intent = new Intent( CadastroActivity.this, PaginaPrinActivity.class );
+        Intent intent = new Intent( CadastroActivity.this, FinderActivity.class );
         startActivity( intent );
         finish();
     }

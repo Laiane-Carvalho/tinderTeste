@@ -14,6 +14,8 @@ import com.facebook.appevents.AppEventsLogger;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import testeadapt3.cursoandroid2.com.mytinder.enuns.TipoLogin;
+
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -79,5 +81,17 @@ public class LoginActivity extends AppCompatActivity {
     public void logar(View view) {
         loginEmailSenha.signIn( email.getText().toString(), senha.getText().toString() );
         //loginEmailSenha.logarEmaileSenha( email.getText().toString(),senha.getText().toString() );
+    }
+    public static TipoLogin checkLoginFacebookOrGoogle() {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            if (user.getProviders().contains( "cadastro.com" )) {
+                return TipoLogin.CADASTRO;
+            }
+            if (user.getProviders().contains( "facebook.com" )) {
+                return TipoLogin.FACEBOOK;
+            }
+        }
+        return TipoLogin.NENHUM;
     }
 }

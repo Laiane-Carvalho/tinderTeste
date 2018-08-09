@@ -57,9 +57,7 @@ public class LoginEmailSenha {
                             irPrincipal();
 
                         } else {
-
                             String errorException = "";
-
                             try {
                                 throw task.getException();
                             } catch (FirebaseAuthInvalidUserException e) {

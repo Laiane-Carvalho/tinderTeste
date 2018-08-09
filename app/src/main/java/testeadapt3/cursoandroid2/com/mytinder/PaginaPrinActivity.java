@@ -50,36 +50,6 @@ public class PaginaPrinActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-
-        accessToken = AccessToken.getCurrentAccessToken();
-        if (accessToken == null) {
-            finish();
-        }
-        GraphRequest request = GraphRequest.newMeRequest( accessToken, new GraphRequest.GraphJSONObjectCallback() {
-            @Override
-            public void onCompleted(JSONObject object, GraphResponse response) {
-                try {
-                    name = object.getString( "name" );
-                    email = object.getString( "email" );
-                    id = (String) object.get( "id" );
-                    nameperfilUser.setText( name );
-                    caminhoImagem = "https://graph.facebook.com/" + object.getString( "id" ) + "/picture?type=large";
-                    Picasso.get().load( caminhoImagem ).into( picturePerfilUser );
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        } );
-        Bundle parametrs = new Bundle();
-        parametrs.putString( "fields", "id,name,email" );
-        request.setParameters( parametrs );
-        request.executeAsync();
-    }
-
     public void desconectar(View view) {
          loginFacebook.sairFacebook();
         // loginEmailSenha.signOut();
