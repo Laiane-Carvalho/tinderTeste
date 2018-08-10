@@ -20,6 +20,8 @@ import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.auth.FirebaseUser;
 
+import testeadapt3.cursoandroid2.com.mytinder.activities.FinderActivity;
+
 public class CadastroActivity extends AppCompatActivity {
 
     private static final String TAG = "cadastro";

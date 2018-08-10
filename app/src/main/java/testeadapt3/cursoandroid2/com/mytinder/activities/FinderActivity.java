@@ -1,10 +1,9 @@
 package testeadapt3.cursoandroid2.com.mytinder;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.SupportActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -32,24 +31,39 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import butterknife.BindView;
 import testeadapt3.cursoandroid2.com.mytinder.enuns.TipoLogin;
 
-public class FinderActivity extends AppCompatActivity {
+public class FinderActivity extends SupportActivity {
 
+    //binds layout
+    @BindView( R.id.imagem1Cima )
     ImageView imagemCima;
+
+    @BindView( R.id.imagem2Baixo )
     ImageView imagemBaixo;
+
+    @BindView( R.id.textViewNomes )
     TextView texto;
-    RelativeLayout meuLaypout;
+
+    @BindView( R.id.iconeID )
     ImageView icone;
 
-    //picture user perfil
-    AccessToken accessToken;
+    @BindView( R.id.meuLayoutId )
+    RelativeLayout meuLaypout;
+
+    //picture user perfil facebook
+    @BindView( R.id.picturePerfilUser )
     private ImageView picturePerfilUser;
+
+    @BindView( R.id.namePerfilUser )
     private TextView namePerfilUser;
+
     String name;
     String email;
     String id;
     String caminhoImagem;
+    AccessToken accessToken;
 
     LoginFacebook loginFacebook;
     int contador;
@@ -66,24 +80,19 @@ public class FinderActivity extends AppCompatActivity {
     int[] listaImagem = {R.drawable.flor, R.drawable.flor1, R.drawable.flor2, R.drawable.flor3, R.drawable.flor4, R.drawable.flor5
             , R.drawable.flor6, R.drawable.flor7};
 
-    @SuppressLint("NewApi")
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate( savedInstanceState );
+    int layoutID() {
+        return R.layout.activity_finder;
+    }
+
+    @Override
+    void inicializar(Bundle savedInstanceState) {
         setContentView( R.layout.activity_finder );
         android.support.v7.widget.Toolbar toolbar = findViewById( R.id.includeToolbar );
-        setSupportActionBar( toolbar );
 
         verificarCadastro();
         listaNomes = new ArrayList <>();
         auth = FirebaseAuth.getInstance();
-        picturePerfilUser = findViewById( R.id.imagemFotoPerfilFaceId );
-        namePerfilUser = findViewById( R.id.namePerfilUser );
-        imagemCima = (ImageView) findViewById( R.id.imagem1Cima );
-        imagemBaixo = (ImageView) findViewById( R.id.imagem2Baixo );
-        texto = (TextView) findViewById( R.id.textViewNomes );
-        meuLaypout = (RelativeLayout) findViewById( R.id.meuLayoutId );
-        icone = (ImageView) findViewById( R.id.iconeID );
         loginFacebook = new LoginFacebook( this );
         databaseRef = FirebaseDatabase.getInstance();
 
@@ -94,7 +103,6 @@ public class FinderActivity extends AppCompatActivity {
         imagemBaixo.setRotation( -30.0f );
         imagemBaixo.setScaleY( 0.35f );
         imagemBaixo.setScaleX( 0.35f );
-
 
         meuLaypout.setOnTouchListener( new OnSwipeTouchListener( FinderActivity.this ) {
             public void onSwipeTop() {
